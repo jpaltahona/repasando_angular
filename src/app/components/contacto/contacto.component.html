@@ -1,0 +1,12 @@
+<h2>Hola COntacto</h2>
+<div *ngIf="parametro">
+  {{parametro}}
+</div>
+<div *ngIf="!parametro">
+  <button (click)="redirigir()">
+    Ir a pagina con parametros
+  </button>
+  <button (click)="redirigirHome()">
+    Home
+  </button>
+</div>

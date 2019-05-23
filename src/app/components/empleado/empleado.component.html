@@ -1,0 +1,29 @@
+<p>
+  empleado works!
+</p>
+ <strong>
+   Empleado Estrella {{valor}}
+ </strong>
+<ul >
+    <li *ngFor="let item of trabajadores; let i = index">
+        <strong>{{i+1}}</strong> {{item.nombre}} - {{item.edad}} 
+    </li>
+</ul>
+<h3>Colores Switch</h3>
+<ul [ngSwitch]="color">
+    <li *ngSwitchCase = "'blue'" [ngStyle]="{'background': color, 'color': 'white', 'padding' : '20px'}"> 
+        es de color rojo 
+    </li>
+</ul>
+<hr />
+
+<h3>Selector de colores:</h3>
+<input type="text" [(ngModel)]="color_seleccionado"/>
+    <pre>
+        {{color_seleccionado}}
+    </pre>
+<div [ngStyle]="{'background': color_seleccionado, 'padding': '20px', 'width': '200px', 'height': '200px', 'float': 'right'}">
+
+</div>
+
+ 
